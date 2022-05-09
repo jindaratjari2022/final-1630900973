@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลอตเตอรี่  Get Name & ID </title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>date</th>
+            <th>nameber</th>
+            <th>reward</th>
+            
+        </tr>
+        <% beers.forEach(function(item) { %>
+        <tr>
+            <td><%= item.id %></td>
+            <td><%= item.date %></td>
+            <td><%= item.nameber %></td>
+            <td><%= item.reward %></td>
+        </tr>
+        <% }) %>
+    </table>
+</body>
+</html>
